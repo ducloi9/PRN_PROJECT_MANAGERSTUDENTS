@@ -1,0 +1,24 @@
+﻿<Window x:Class="Manage_student.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Manage_student"
+        mc:Ignorable="d"
+        Title="Manager Students" Height="600" Width="800">
+    <Grid Background="#2C3E50">
+        <!-- Màu nền #2C3E50 -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="780">
+            <TextBlock Text="Manager Students" FontSize="36" FontWeight="Bold" Foreground="White" Margin="0 0 0 30"/>
+
+            <Button Padding="20" Margin="10" Name="btnDepartment" Click="btnDepartment_Click" Background="#3498DB" Foreground="White">Quản Lý Khoa</Button>
+            <Button Padding="20" Margin="10" Name="btnStudent" Click="btnStudent_Click" Background="#E74C3C" Foreground="White">Quản Lý Sinh Viên</Button>
+            <Button Padding="20" Margin="10" Name="btnCourse" Click="btnCourse_Click" Background="#9B59B6" Foreground="White">Quản Lý Đề Tài </Button>
+            <Button Padding="20" Margin="10" Name="btnTeacher" Click="btnTeacher_Click" Background="#2ECC71" Foreground="White">Quản Lý Giáo Viên</Button>
+            <Button Padding="20" Margin="10" Name="btnAssignment" Click="btnAssignment_Click" Background="#F1C40F" Foreground="White">Quản Lý Phân Công</Button>
+
+            <Button Padding="20" Margin="10" Name="btnLogout" Click="btnLogout_Click" Background="#ECF0F1" Foreground="#34495E" HorizontalAlignment="Stretch">Logout</Button>
+            <!-- Màu nền #ECF0F1 -->
+        </StackPanel>
+    </Grid>
+</Window>
